@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% set assetHash = global.random() %}
+<html lang="de">
+<head>
+    {% include "partials/meta.html" %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <style>{% include "css/critical.css" %}</style>
+
+    {% if pageCriticalStyles %}
+    {% for item in pageCriticalStyles %}
+    <style>{% include item %}</style>
+    {% endfor %}
+    {% endif %}
+
+    <link rel="stylesheet" media="print" href="{{ ('/fonts/fonts.css?' ~ assetHash) | url }}" onload="this.media='all'" />
+
+    {% if pageStylesheets %}
+    {% for item in pageStylesheets %}
+    <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
+    {% endfor %}
+    {% endif %}
+</head>
+
+<body>
+    {% include "partials/navigation.html" %}
+    {% block content %}
+    {% endblock %}
+
+    <div class='cursor' id="cursor"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="{{ '/js/nav.js' | url }}" defer></script>
+    <script src="{{ '/js/cursor.js' | url }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+@use 'sass:color';
+
+// MQ trigger
+@mixin small {
+  @media only screen and (max-width: 766px) {
+    @content;
+  }
+}
+
+// colores
+$color: #8f8f8f;
+$color2: #e8f380;
+
+// Navigation
+.main_h {
+  max-height: 70px;
+  transition: max-height 0.5s ease-in-out;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  will-change: max-height;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Martian Mono", monospace;
+  @include small {
+    padding-top: 25px;
+  }
+}
+
+.open-wide {
+  max-height: 400px !important;
+}
+
+.sticky {
+  opacity: 1;
+  top: 0;
+  padding: 18px 41px;
+  @include small {
+    padding: 25px 0 0 19px;
+  }
+}
+
+.logo {
+  font-size: xxx-large;
+  color: #000;
+  float: left;
+  display: block;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-top: 8px;
+
+  @include small {
+    float: none;
+    padding-top: 0;
+    font-size: xx-large;
+  }
+}
+
+nav {
+  margin-top: 1rem;
+  float: right;
+
+  @include small {
+    width: 100%;
+  }
+
+  ul {
+    list-style: none;
+    display: flex; // Ensure all <li> elements stay in a row
+    gap: 16px;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+
+    @include small {
+      padding-top: 10px;
+      margin-bottom: 22px;
+      flex-direction: column; // Stack items vertically on small screens
+      align-items: center;
+      width: 100%;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 89px;
+      height: 40px;
+      text-transform: uppercase;
+
+      &:hover {
+        cursor: default;
+      }
+
+      @include small {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+      }
+    }
+
+    a.old {
+      color: #000;
+      font-size: larger;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+      width: 100%; // Make the link fill the entire <li>
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: blue;
+        cursor: default;
+      }
+    }
+
+    a {
+      position: relative;
+      color: inherit;
+      text-decoration: none;
+      line-height: 24px;
+      display: inline-block;
+      padding: 10px 0 5px;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 103%;
+        height: 5px;
+        background: blue;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+      }
+
+      &:hover::before {
+        transform: translateX(0);
+      }
+    }
+
+
+    .link-active {
+      position: relative;
+      color: inherit;
+      text-decoration: none;
+      line-height: 24px;
+      display: inline-block;
+      padding: 10px 0 5px;
+      overflow: hidden;
+    }
+
+    .link-active-before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 103%;
+      height: 5px;
+      background: transparent;
+      transform: translateX(0);
+      transition: transform 0.5s ease;
+    }
+
+
+  }
+}
+
+
+.nav__row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+
+// Page Style
+* {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+.mobile-toggle {
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  @include small {
+      display: block;
+  }
+
+
+
+  span {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: black;
+    opacity: 1;
+    left: 0;
+    transition: 0.25s ease-in-out;
+    -webkit-transition: 0.25s ease-in-out;
+  }
+}
+
+.mobile-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.mobile-toggle span:nth-child(2), .mobile-toggle span:nth-child(3) {
+  top: 12px;
+}
+
+.mobile-toggle span:nth-child(4) {
+  top: 24px;
+}
+
+.mobile-toggle.open-nav span:nth-child(1) {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+
+.mobile-toggle.open-nav span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.mobile-toggle.open-nav span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.mobile-toggle.open-nav span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+

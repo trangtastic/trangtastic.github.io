@@ -1,0 +1,72 @@
+@mixin responsive($breakpoint) {
+  @if $breakpoint == medium {
+    @media only screen and (max-width: 894px) { @content; }
+  } @else if $breakpoint == small {
+    @media only screen and (max-width: 600px) { @content; }
+  }
+}
+
+.footer {
+  margin-top: 15vh;
+  padding-top: 5vh;
+  color: white;
+  font-size: large;
+  text-align: center;
+
+  .kontakt, .agentur {
+    font-size: xx-large;
+    text-transform: uppercase;
+  }
+
+  .kontakt {
+    font-size: small;
+  }
+
+  .agentur {
+    margin-top: 1px;
+    font-size: small;
+  }
+
+  svg {
+    width: 30px;
+  }
+
+  .footer__list {
+    margin-top: 2vh;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    .footer__item {
+      margin-top: 0.2vh;
+      text-transform: uppercase;
+
+      a {
+        &:hover {
+          color: yellow;
+        }
+      }
+    }
+  }
+
+  .agentur_mail {
+    padding: 0 10px 0px 10px;
+    font-size: xxx-large;
+    @include responsive(medium) { font-size: xx-large }
+    @include responsive(small) { font-size: large }
+  }
+
+  .private_mail {
+    font-size: xx-large;
+    @include responsive(small) { font-size: medium }
+  }
+}
+
+.full-bg {
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" preserveAspectRatio="none"><path d="M900,700V0L886.19.37c-7.46.37-108.31,7.44-108.31,7.44h0S388.72,24.53,230.39,13C146.9,6.69,70.47,5.58,26.36,9.66L0,11.78V700"/></svg>');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}

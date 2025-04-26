@@ -1,0 +1,82 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+
+{% block content %}
+<div data-barba="wrapper" class="vitawrapper">
+    <div data-barba="container" data-barba-namespace="{{ namespace }}" class="vita">
+        <div class="vita-content">
+
+            <ul class="persona-list">
+                {% for item in vita.persona.items %}
+                <li>
+                    <span class="verb">{{ item.title }}</span>
+                    <span class="property">
+                    {{ item.property | replace('/', '<span class="seperator">&nbsp;</span>') | safe }}
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <h2 class="title">{{vita.training.title}}</h2>
+            <ul class="list">
+                {% for item in vita.training.items %}
+                <li data-year="{{ item.year }}">
+                    <span class="production">{{ item.production }}</span>
+                    <span class="company">{{ item.company }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <h2 class="title">{{vita.tv.title}}</h2>
+            <ul class="list">
+                {% for item in vita.tv.items %}
+                <li data-year="{{ item.year }}">
+                    <span class="production">{{ item.production }}</span>
+                    <span class="by">directed by</span> <span class="name">{{ item.direction }}</span>
+                    {% if item.casting %}
+                    <span class="by">cast by</span> <span class="name">{{ item.casting }}</span>
+                    {% endif %}
+
+                    <span class="company">{{ item.company }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <h2 class="title">{{vita.film.title}}</h2>
+            <ul class="list">
+                {% for item in vita.film.items %}
+                <li data-year="{{ item.year }}">
+                    <span class="production">{{ item.production }}</span>
+                    <span class="by">directed by</span> <span class="name">{{ item.direction }}</span>
+                    {% if item.casting %}
+                    <span class="by">cast by</span> <span class="name">{{ item.casting }}</span>
+                    {% endif %}
+
+                    <span class="company">{{ item.company }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <h2 class="title">{{vita.stage.title}}</h2>
+            <ul class="list">
+                {% for item in vita.stage.items %}
+                <li data-year="{{ item.year }}">
+                    <span class="production">{{ item.production }}</span>
+                    {% if item.author %}
+                    <span class="by">written by</span> <span class="name">{{ item.author }}</span>
+                    {% endif %}
+                    <span class="by">directed by</span> <span class="name">{{ item.direction }}</span>
+
+
+
+                    <span class="by">at</span> <span class="name">{{ item.venue }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% include "partials/footer.html" %}
+    </div>
+</div>
+
+{% endblock %}

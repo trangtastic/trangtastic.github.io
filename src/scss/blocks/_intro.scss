@@ -1,0 +1,104 @@
+.intro {
+  text-align: center;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 66vh;
+}
+
+$video-height: 70vh;
+
+.fullsize-video-bg {
+  height: $video-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 4vh;
+}
+
+#video-viewport {
+  position: relative;
+  width: 100vw;
+  height: $video-height;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  height: $video-height;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.disable-cursor {
+  display: none;
+}
+
+.cursor{
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  z-index: 9999;
+}
+
+.cursor-arrow-right {
+  width: 35px;
+  height: 35px;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><polygon fill="%23FFFFFF" points="11,15 17,9 11,3 11,7 4,7 4,11 11,11"/><polygon points="5,8 12,8 12,5.414 15.586,9 12,12.586 12,10 5,10"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: unset;
+  box-shadow: unset;
+  background-position: unset;
+}
+
+.cursor-arrow-left {
+  width: 35px;
+  height: 35px;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><polygon points="1 9 6.999 15.001 7 11 14 11 14 7.004 7 7.002 7 3" fill="%23fff"/><polygon points="13 10 6 10 6 12.587 2.414 9 6 5.415 6 8.001 13 8.004"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: unset;
+  box-shadow: unset;
+  background-position: unset;
+}
+
+.cursor-glass {
+  width: 25px;
+  height: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath fill='none' stroke='white' stroke-width='3' d='M20.745,32.62c2.883,0,5.606-1.022,7.773-2.881L39.052,40.3c0.195,0.196,0.452,0.294,0.708,0.294 c0.255,0,0.511-0.097,0.706-0.292c0.391-0.39,0.392-1.023,0.002-1.414L29.925,28.319c3.947-4.714,3.717-11.773-0.705-16.205 c-2.264-2.27-5.274-3.52-8.476-3.52s-6.212,1.25-8.476,3.52c-4.671,4.683-4.671,12.304,0,16.987 C14.533,31.37,17.543,32.62,20.745,32.62z M13.685,13.526c1.886-1.891,4.393-2.932,7.06-2.932s5.174,1.041,7.06,2.932 c3.895,3.905,3.895,10.258,0,14.163c-1.886,1.891-4.393,2.932-7.06,2.932s-5.174-1.041-7.06-2.932 C9.791,23.784,9.791,17.431,13.685,13.526z'/%3E%3Cpath fill='black' d='M20.745,32.62c2.883,0,5.606-1.022,7.773-2.881L39.052,40.3c0.195,0.196,0.452,0.294,0.708,0.294 c0.255,0,0.511-0.097,0.706-0.292c0.391-0.39,0.392-1.023,0.002-1.414L29.925,28.319c3.947-4.714,3.717-11.773-0.705-16.205 c-2.264-2.27-5.274-3.52-8.476-3.52s-6.212,1.25-8.476,3.52c-4.671,4.683-4.671,12.304,0,16.987 C14.533,31.37,17.543,32.62,20.745,32.62z M13.685,13.526c1.886-1.891,4.393-2.932,7.06-2.932s5.174,1.041,7.06,2.932 c3.895,3.905,3.895,10.258,0,14.163c-1.886,1.891-4.393,2.932-7.06,2.932s-5.174-1.041-7.06-2.932 C9.791,23.784,9.791,17.431,13.685,13.526z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: unset;
+  box-shadow: unset;
+  background-position: unset;
+}
+
+.cursor-close {
+  width: 120px;
+  height: 50px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50"><text style="fill:%23333; font-family:monospace, sans-serif; font-size:30px; font-style:italic; text-transform:lowercase; white-space:pre;" y="39.257" x="12.306">close me</text></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: unset;
+  box-shadow: unset;
+  background-position: unset;
+}
+
+.carousel-control-next, .carousel-control-prev, .modal-close-button {
+  cursor: none !important;
+}
+
+.modal-close-button {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22800px%22%20height%3D%22800px%22%20viewBox%3D%220%20-0.5%2021%2021%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Ctitle%3Eclose%20%5B%231511%5D%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cdefs%2F%3E%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20id%3D%22Dribbble-Light-Preview%22%20transform%3D%22translate%28-419.000000%2C%20-240.000000%29%22%20fill%3D%22%23000000%22%3E%3Cg%20id%3D%22icons%22%20transform%3D%22translate%2856.000000%2C%20160.000000%29%22%3E%3Cpolygon%20id%3D%22close-%5B%231511%5D%22%20points%3D%22375.0183%2090%20384%2098.554%20382.48065%20100%20373.5%2091.446%20364.5183%20100%20363%2098.554%20371.98065%2090%20363%2081.446%20364.5183%2080%20373.5%2088.554%20382.48065%2080%20384%2081.446%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}

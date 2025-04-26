@@ -1,0 +1,38 @@
+@use 'reset';
+@use 'blocks/nav';
+@use 'blocks/intro';
+@use 'blocks/next';
+@use 'blocks/photos';
+@use 'blocks/vita';
+@use 'blocks/footer';
+
+:root {
+  --flow-space: 1.77rem;
+}
+
+body {
+  background-color: #fff;
+  color: #263147;
+  font-size: 1.33rem;
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+  overflow: inherit !important;
+  padding-right: inherit !important;
+}
+
+// selection styling
+::selection {
+  color: #c5d3e8;
+  background: #263147;
+}
+
+// barba-specifics
+[data-barba="container"] {
+  position: absolute;
+  width: 100%;
+}

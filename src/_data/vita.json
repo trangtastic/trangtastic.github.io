@@ -1,0 +1,170 @@
+{
+  "title": "Vita.json",
+  "persona": {
+    "title": "Persona",
+    "items": [
+      {
+        "title": "lives in:",
+        "property": "Wiesbaden"
+      },
+      {
+        "title": "has options in:",
+        "property": "Berlin Köln München Hamburg"
+      },
+      {
+        "title": "measures:",
+        "property": "154cm"
+      },
+      {
+        "title": "speaks:",
+        "property": "German English Vietnamese"
+      },
+      {
+        "title": "licensed   to:",
+        "property": "\uD83D\uDEF4  \uD83D\uDEB2  \uD83D\uDEF5   \uD83D\uDE99\uD83C\uDF2C\uFE0F"
+      },
+      {
+        "title": "can:",
+        "property": "\uD83D\uDEB6\uD83C\uDFFB\u200D♀\uFE0F / \uD83C\uDFC3\uD83C\uDFFB\u200D♀\uFE0F / \uD83D\uDD7A\uD83C\uDFFB / \uD83E\uDD38\u200D♀\uFE0F / \uD83E\uDD3A / \uD83C\uDFCA\uD83C\uDFFC\u200D♀\uFE0F / \uD83C\uDFC7\uD83C\uDFFB  / \uD83E\uDD39\uD83C\uDFFB\u200D♀\uFE0F / \uD83D\uDC69\uD83C\uDFFB\u200D\uD83D\uDCBB  / \uD83E\uDDD7\uD83C\uDFFB\u200D♀\uFE0F / \uD83E\uDD4B / \uD83C\uDFB8 / \uD83C\uDFB6 / \uD83C\uDF99\uFE0F / \uD83C\uDFD3 / \uD83C\uDFD0 / \u26BD"
+      }
+    ]
+  },
+  "training": {
+    "title": "Training",
+    "items": [
+      {
+        "year": "2023",
+        "production": "Acting",
+        "company": "UDK BERLIN"
+      }
+    ]
+  },
+  "tv": {
+    "title": "TV",
+    "items": [
+      {
+        "year": "2024",
+        "production": "ASBEST 2",
+        "direction": "Olivia Retzer + Juri Sternburg",
+        "casting": "Greta Baumann",
+        "company": "ARD"
+      },
+      {
+        "year": "2023",
+        "production": "Eine Billion Dollar",
+        "direction": "Florian Baxmeyer",
+        "casting": "Natascha Zimmermann",
+        "company": "PARAMOUNT"
+      },
+      {
+        "year": "2022",
+        "production": "Ein Starkes Team",
+        "direction": "Ulrich Zrenner",
+        "casting": "Nina Haun",
+        "company": "ZDF"
+      }
+    ]
+  },
+
+  "film": {
+    "title": "film",
+    "items": [
+      {
+        "year": "2023",
+        "production": "Nina in einer Reihe Begegnungen",
+        "direction": "Sophie Gmeiner",
+        "company": "Schiefer Film"
+      },
+      {
+        "year": "2022",
+        "production": "Freak Out",
+        "direction": "Gökhan Sayim",
+        "company": "Cinegemma MbH"
+      },
+      {
+        "year": "2020",
+        "production": "Wie Wir Wollen",
+        "direction": "Kollektiv Kinokas"
+      }
+    ]
+  },
+
+  "stage": {
+    "title": "Stage",
+    "items": [
+      {
+        "year": "2025",
+        "production": "An Grenzen",
+        "direction": "Susanne Frieling",
+        "author": "Özlem Özgül Dündar",
+        "venue": "Staatstheater Wiesbaden"
+      },
+      {
+        "year": "2024",
+        "production": "Haben Sie 5 Minuten Zeit?",
+        "direction": "Marthe Meinhold + Marius Schötz",
+        "author": "Ensemble",
+        "venue": "Staatstheater Wiesbaden"
+      },
+      {
+        "year": "2024",
+        "production": "Spiel der Illusionen",
+        "direction": "Christina Rast",
+        "venue": "Staatstheater Wiesbaden"
+      },
+      {
+        "year": "2024",
+        "production": "Frauen vor Flusslandschaft",
+        "direction": "Jens Groß",
+        "venue": "Theater Bonn"
+      },
+      {
+        "year": "2024",
+        "production": "Gelbes Gold",
+        "direction": "Malin Lamparter",
+        "author": "Fabienne Dür",
+        "venue": "Stadttheater Gießen"
+      },
+      {
+        "year": "2023",
+        "production": "Revolution",
+        "direction": "Salome Dastmalchi",
+        "venue": "Vagantenbühne Berlin"
+      },
+      {
+        "year": "2022",
+        "production": "Ente Tod und Tulpe",
+        "direction": "Amelie von Godin",
+        "author": "Wolf Erlbruch",
+        "venue": "Stadttheater Gießen"
+      },
+      {
+        "year": "2022",
+        "production": "Posthuman Journey",
+        "direction": "Thomas Krupa",
+        "author": "Pat To Yan",
+        "venue": "Stadttheater Gießen"
+      },
+      {
+        "year": "2022",
+        "production": "Davor",
+        "direction": "Robert Lehniger",
+        "venue": "Münchener Biennale"
+      },
+      {
+        "year": "2022",
+        "production": "Pussy, King of the Pirates",
+        "direction": "Theresa Thomasberger",
+        "author": "Kathy Acker",
+        "venue": "bat-Studiotheater"
+      },
+      {
+        "year": "2021",
+        "production": "Peeling Oranges",
+        "direction": "Salome Dastmalchi",
+        "author": "Patty Kim Hamilton",
+        "venue": "Deutsches Theater Berlin"
+      }
+    ]
+  }
+}

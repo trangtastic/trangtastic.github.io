@@ -1,0 +1,223 @@
+$variables: (
+        primary-color: cornflowerblue,
+        secondary-color: yellow,
+        tertiary-color: aquamarine,
+        quaternary-color: aliceblue,
+        border-color: black,
+        text-color: blue,
+        max-width-desktop: 50vw,
+        max-width-big: 60vw,
+        max-width-medium: 80vw,
+        max-width-container: 80vw,
+        golden-ratio: 0.618
+);
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == big {
+    @media only screen and (max-width: 1500px) { @content; }
+  } @else if $breakpoint == medium {
+    @media only screen and (max-width: 1035px) { @content; }
+  } @else if $breakpoint == small {
+    @media only screen and (max-width: 766px) { @content; }
+  } @else if $breakpoint == short {
+    @media only screen and (max-width: 665px) { @content; }
+  } @else if $breakpoint == tiny {
+    @media only screen and (max-width: 477px) { @content; }
+  }
+}
+
+section.next {
+  margin-top: 10vh;
+
+  .title {
+    font-size: large;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+  }
+
+  svg {
+    width: 30px;
+  }
+}
+
+.next_container {
+  max-width: map-get($variables, max-width-container);
+  margin: 10vh auto 0 auto;
+}
+
+.d-md-flex {
+  &.row.next_link {
+    border: 2px solid map-get($variables, border-color);
+    background-color: map-get($variables, primary-color);
+    margin-bottom: 3vh !important;
+    width: map-get($variables, max-width-desktop);
+
+    @include responsive(big) { width: map-get($variables, max-width-big); }
+    @include responsive(medium) { width: map-get($variables, max-width-medium); }
+
+    @each $index, $color in (1: primary-color, 2: secondary-color, 3: tertiary-color, 4: quaternary-color) {
+      &.production-#{$index} {
+        background-color: map-get($variables, $color);
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .date {
+      > div {
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0;
+
+        span {
+          flex: 1;
+          text-align: center;
+        }
+      }
+
+      .year {
+        text-decoration: overline;
+        letter-spacing: 4px;
+      }
+    }
+
+    .weekday {
+      text-transform: lowercase;
+      transform: rotate(-90deg);
+    }
+
+    .next_details {
+      padding-left: 44px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .next_production {
+      text-transform: uppercase;
+    }
+
+    .next_location {
+      text-transform: lowercase;
+      color: map-get($variables, text-color);
+      font-size: medium;
+    }
+  }
+}
+
+.stacked-layout {
+  position: relative;
+  width: map-get($variables, max-width-container);
+  min-height: calc(map-get($variables, max-width-container) * map-get($variables, golden-ratio));
+  margin: 0 auto 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+
+  svg {
+    width: 20px;
+  }
+
+  .next_image {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .background-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border: 2px solid map-get($variables, border-color);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 31%);
+      z-index: 2;
+      @include responsive(small) { background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 49%); }
+      @include responsive(tiny) { background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 68%); }
+    }
+  }
+
+  .foreground-child {
+    position: relative;
+    z-index: 3;
+    max-width: 80%;
+    color: white;
+  }
+
+  .next_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3vh;
+     padding-left: 3vh;
+    @include responsive(small) { padding-bottom: 1.5vh }
+  }
+
+  .next_details {
+    text-align: left;
+    @include responsive(short) { font-size: 1rem }
+  }
+
+  .next_production {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: xx-large;
+    @include responsive(tiny) { font-size: 17px; }
+
+  }
+
+  .next_location {
+    font-weight: 300;
+    @include responsive(tiny) { font-size: small; }
+  }
+
+  .next_date {
+    display: flex;
+    justify-content: flex-end;
+    @include responsive(tiny) { font-size: large; }
+
+    .weekday {
+      transform: rotate(-90deg);
+      padding-left: 30px;
+    }
+
+    .weekday, .date-container {
+      align-self: flex-end;
+    }
+
+    .year {
+      text-decoration: overline;
+    }
+  }
+}
+
+.no-image {
+  min-height: 14vh !important;
+  @include responsive(short) { min-height: 18vh !important;}
+  color: black !important;
+  border: 2px solid map-get($variables, border-color);
+  background-color: map-get($variables, primary-color);
+}
+

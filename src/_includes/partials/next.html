@@ -1,0 +1,54 @@
+<section class="next">
+    <p class="title">{{ next.title }} </p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 30" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <path d="M7 20l5 7 5-7M12 2v23"/>
+    </svg>
+
+    <div class="next_container">
+        {% for item in next.items | upcomingEvents %}
+        {% set dateParts = item.date.split('.') %}
+
+        <!-- Row Layout for Desktop -->
+        <a class="[ next_link row mx-auto align-items-center mb-2 d-none d-md-flex production-{{ item['item-index'] }} ]" href="{{ item.url }}" target="_blank" title="{{ item.production }}">
+            <div class="col-md-1">
+                <div class="weekday">{{ helpers.getWeekday(item.date) }}</div>
+            </div>
+            <div class="date col-md-1">
+                <div class="date">{{ dateParts[0] }}.{{ dateParts[1] }}</div>
+                <div class="year">{{ dateParts[2] }}</div>
+            </div>
+            <div class="next_details col-md-6">
+                <div class="next_production">{{ item.production }}</div>
+                <div class="next_location">{{ item.location }}</div>
+            </div>
+            {% if item.image %}
+            <div class="next_image col-md-4">
+                <img src="{{ 'images/events/' + item.image | safe }}" alt="{{ item.production }}">
+            </div>
+            {% endif %}
+        </a>
+
+        <!-- Card Layout for Mobile -->
+        <a class="[ next_link stacked-layout d-block d-md-none {% if not item.image %}no-image{% endif %} ]" href="{{ item.url }}" target="_blank" title="{{ item.production }}">
+            <div class="next_image {% if item.image %}background-child{% else %}background-child-no-image{% endif %}">
+                {% if item.image %}
+                <img src="{{ 'images/events/' + item.image | safe }}" alt="{{ item.production }}">
+                {% endif %}
+            </div>
+            <div class="next_info foreground-child">
+                <div class="next_details">
+                    <div class="next_production">{{ item.production }}</div>
+                    <div class="next_location">→ {{ item.location }}</div>
+                </div>
+                <div class="next_date">
+                    <div class="weekday">{{ helpers.getWeekday(item.date) }}</div>
+                    <div class="date-container">
+                        <div class="date">{{ dateParts[0] }}.{{ dateParts[1] }}</div>
+                        <div class="year">{{ dateParts[2] }}</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important;
+  }
+}

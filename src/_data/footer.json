@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "text": "trang@magenta.de",
+      "url": "mailto:trang@magenta.de?subject=Hey Trang!"
+    },
+    {
+      "text": "@trangtastic",
+      "url": "https://www.instagram.com/trangtastic"
+    },
+    {
+      "text": "filmmakers.eu",
+      "url": "https://www.filmmakers.eu/en/actors/trang-dong"
+    }
+  ],
+  "agentur": [
+    {
+      "text": "zav.kuenstlervermittlung-koeln@arbeitsagentur.de",
+      "url": "mailto:zav.kuenstlervermittlung-koeln@arbeitsagentur.de?subject=Anfrage > Trang Dông&body=Liebe%20Anja%20Firmenich%2C"
+    }
+  ]
+}

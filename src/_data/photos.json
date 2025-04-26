@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "photo": "../images/photos/01.png",
+      "photographer": "Mo Ali"
+    },
+    {
+      "photo": "../images/photos/02.png",
+      "photographer": "Mo Ali"
+    },
+    {
+      "photo": "../images/photos/03.png",
+      "photographer": "Mo Ali"
+    },
+    {
+      "photo": "../images/photos/04.png",
+      "photographer": "Mo Ali"
+    },
+    {
+      "photo": "../images/photos/05.png",
+      "photographer": "Mo Ali"
+    },
+    {
+      "photo": "../images/photos/06.png",
+      "photographer": "Mo Ali"
+    }
+  ]
+}
