@@ -183,8 +183,10 @@ $(document).ready(function () {
                 }
             });
 
-
-
+            if (window.matchMedia("(pointer: coarse)").matches) {
+                const el = document.querySelector('.cursor-glass');
+                if (el) el.style.display = 'none';
+            }
         }
 
         const images = document.querySelectorAll(".clickable-image");
