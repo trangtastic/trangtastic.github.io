@@ -57,6 +57,10 @@
     padding-left: 15px;
     @include responsive(medium) {  padding-left: 0 !important; font-size: medium}
   }
+
+  .no-break {
+    white-space: nowrap;
+  }
 }
 
 .list {
