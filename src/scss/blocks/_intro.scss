@@ -84,6 +84,12 @@ video {
   background-position: unset;
 }
 
+@media (pointer: coarse) {
+  .cursor-glass {
+    display: none !important;
+  }
+}
+
 .cursor-close {
   width: 120px;
   height: 50px;
