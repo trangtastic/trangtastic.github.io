@@ -1,6 +1,22 @@
+@mixin responsive($breakpoint) {
+  @if $breakpoint == big {
+    @media only screen and (max-width: 1500px) { @content; }
+  } @else if $breakpoint == medium {
+    @media only screen and (max-width: 1035px) { @content; }
+  } @else if $breakpoint == small {
+    @media only screen and (max-width: 766px) { @content; }
+  } @else if $breakpoint == short {
+    @media only screen and (max-width: 665px) { @content; }
+  } @else if $breakpoint == tiny {
+    @media only screen and (max-width: 477px) { @content; }
+  }
+}
+
+
 .vita-content {
   min-width: 50vw;
   margin: auto 13vw;
+  @include responsive(medium) {  margin: auto 4vw; }
 }
 
 .persona-list{
@@ -9,6 +25,7 @@
   flex-direction: column;
   gap: 1.5em;
   padding-left: 0 !important;
+  @include responsive(medium) {  gap: 0.5em }
 
   .verb{
     font-size: medium;
@@ -28,14 +45,17 @@
 
   .seperator{
     font-size: xx-small;
+    @include responsive(medium) {  display: none }
   }
 
   li:nth-last-of-type(-n+2) .property {
     font-size: xxx-large;
+    @include responsive(medium) {  font-size: xx-large }
   }
 
   .property{
     padding-left: 15px;
+    @include responsive(medium) {  padding-left: 0 !important; font-size: medium}
   }
 }
 
@@ -45,11 +65,13 @@
   gap: 2rem;
   padding-left: 0;
   margin-top: 25px;
+  @include responsive(medium) { margin-top: 15px; }
 }
 
 .list li {
   position: relative;
   padding-left: 6em; /* space for the year */
+  @include responsive(medium) {  padding-left: 3.5em }
 }
 
 .list li::before {
@@ -76,12 +98,13 @@
 .title {
   margin-top: 80px;
   text-transform: uppercase;
+  @include responsive(medium) {  margin-top: 48px; }
 }
 
 //TV
 .company {
-   color: blue;
-   font-size: small;
+  color: blue;
+  font-size: small;
 }
 
 //STAGE:
