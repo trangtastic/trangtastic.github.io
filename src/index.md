@@ -1,5 +1,5 @@
 ---
-title: 'Index'
+title: 'Home'
 layout: 'layouts/index.html'
 namespace: 'index'
 ---

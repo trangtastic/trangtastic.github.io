@@ -1,5 +1,5 @@
 function isIntroPage() {
-    return window.location.pathname === "";
+    return window.location.pathname === "/";
 }
 
 function isPhotosPage() {
@@ -216,31 +216,13 @@ $(document).ready(function () {
         const vitaSpan = document.querySelector(".Vita > .link-active-before");
         photosSpan.style.background = "transparent";
         vitaSpan.style.background = "blue";
-
-
-/*        if (vitaElement) {
-            vitaElement.classList.add("link-active"); // Add class first
-
-            gsap.to(vitaElement, {
-                textDecorationColor: "black", // Fade in the underline
-                duration: 10,
-                ease: "power2.out"
-            });
-        }*/
-
-/*        if (vitaElement) {
-            vitaElement.classList.add("link-active");
-        }
-
-        if (photosElement) {
-            photosElement.classList.remove("link-active");
-        }*/
     }
 
     function initializeIntroPage() {
         const video = document.getElementById("video");
 
         if (isIntroPage() && video) {
+            console.log('video will play');
             video.play().catch(error => {
                 console.error("Autoplay failed:", error);
             });
