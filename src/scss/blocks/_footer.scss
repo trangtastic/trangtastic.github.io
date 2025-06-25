@@ -61,6 +61,10 @@
   }
 }
 
+button {
+
+}
+
 .full-bg {
   width: 100%;
   height: auto;
@@ -69,4 +73,15 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: top;
+}
+
+#newsletter-form {
+  font-size: xx-small;
+
+
+
+  button:hover {
+    background-color: yellow;
+    color: black;
+  }
 }

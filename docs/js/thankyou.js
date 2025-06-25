@@ -1,0 +1,1 @@
+let form=document.getElementById("newsletter-form"),thankYouMessage=document.getElementById("thank-you-message");form.addEventListener("submit",function(e){e.preventDefault(),thankYouMessage.style.display="block",form.style.display="none",setTimeout(()=>{form.reset()},3e3)});
