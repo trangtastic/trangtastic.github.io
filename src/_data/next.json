@@ -6,7 +6,15 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/wie-es-euch-gefaellt/",
       "image": "wieeseuchgefaellt.jpg",
-      "dates": ["27.06.2025", "28.06.2025", "03.07.2025"],
+      "dates": ["03.07.2025"],
+      "item-index": 1
+    },
+    {
+      "production": "Haben Sie 5 Minuten Zeit?",
+      "location": "Staatstheater Wiesbaden",
+      "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/haben-sie-5-minuten-zeit/",
+      "image": "schale1.jpg",
+      "dates": ["29.08.2025", "05.09.2025"],
       "item-index": 1
     }
   ]
