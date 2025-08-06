@@ -1,27 +1,27 @@
 {
   "items": [
     {
-      "photo": "../images/photos/1.jpg",
+      "photo": "../images/photos/11.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/2.jpg",
+      "photo": "../images/photos/22.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/3.jpg",
+      "photo": "../images/photos/33.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/4.jpg",
+      "photo": "../images/photos/44.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/5.jpg",
+      "photo": "../images/photos/55.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/6.jpg",
+      "photo": "../images/photos/66.jpg",
       "photographer": "Monika Szolle"
     }
   ]
