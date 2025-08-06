@@ -2,14 +2,6 @@
   "title": "theater",
   "items": [
     {
-      "production": "Wie es euch gefällt",
-      "location": "Staatstheater Wiesbaden",
-      "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/wie-es-euch-gefaellt/",
-      "image": "wieeseuchgefaellt.jpg",
-      "dates": ["03.07.2025"],
-      "item-index": 1
-    },
-    {
       "production": "Haben Sie 5 Minuten Zeit?",
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/haben-sie-5-minuten-zeit/",
