@@ -1,27 +1,31 @@
 {
   "items": [
     {
-      "photo": "../images/photos/11.jpg",
+      "photo": "../images/photos/1.jpg",
+      "photographer": "Ingolf Bode"
+    },
+    {
+      "photo": "../images/photos/2.jpg",
+      "photographer": "Ingolf Bode"
+    },
+    {
+      "photo": "../images/photos/3.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/22.jpg",
+      "photo": "../images/photos/4.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/33.jpg",
+      "photo": "../images/photos/5.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/44.jpg",
+      "photo": "../images/photos/6.jpg",
       "photographer": "Monika Szolle"
     },
     {
-      "photo": "../images/photos/55.jpg",
-      "photographer": "Monika Szolle"
-    },
-    {
-      "photo": "../images/photos/66.jpg",
+      "photo": "../images/photos/7.jpg",
       "photographer": "Monika Szolle"
     }
   ]
