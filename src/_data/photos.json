@@ -10,23 +10,27 @@
     },
     {
       "photo": "../images/photos/3.jpg",
-      "photographer": "Monika Szolle"
+      "photographer": "YellowBelly"
     },
     {
       "photo": "../images/photos/4.jpg",
-      "photographer": "Tom Farebrother"
+      "photographer": "YellowBelly"
     },
     {
       "photo": "../images/photos/5.jpg",
-      "photographer": "Monika Szolle"
+      "photographer": "YellowBelly"
     },
     {
       "photo": "../images/photos/6.jpg",
-      "photographer": "Monika Szolle"
+      "photographer": "YellowBelly"
     },
     {
       "photo": "../images/photos/7.jpg",
       "photographer": "Monika Szolle"
+    },
+    {
+      "photo": "../images/photos/8.jpg",
+      "photographer": "YellowBelly"
     }
   ]
 }
