@@ -94,6 +94,13 @@
     "items": [
       {
         "year": "2025",
+        "production": "Antigone",
+        "direction": "Mikheil Charkviani",
+        "author": "R. Schimmelpfennig",
+        "venue": "Staatstheater Wiesbaden"
+      },
+      {
+        "year": "2025",
         "production": "Wie es euch gefällt",
         "direction": "Nurkan Erpulat",
         "author": "Shakespeare",
