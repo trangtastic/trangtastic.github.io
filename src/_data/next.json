@@ -6,7 +6,7 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/haben-sie-5-minuten-zeit/",
       "image": "schale1.jpg",
-      "dates": ["05.09.2025", "12.10.2025", "30.10.2025"],
+      "dates": ["30.10.2025", "30.11.2025", "20.12.2025"],
       "item-index": 1
     },
     {
@@ -14,7 +14,7 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/wie-es-euch-gefaellt/",
       "image": "wieeseuchgefaellt.jpg",
-      "dates": ["03.10.2025", "18.10.2025"],
+      "dates": ["18.10.2025", "14.11.2025", "16.12.2025", "26.12.2025"],
       "item-index": 1
     },
     {
@@ -22,7 +22,7 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/antigone/",
       "image": "",
-      "dates": ["24.10.2025"],
+      "dates": ["24.10.2025", "01.11.2025", "15.11.2025", "19.12.2025"],
       "item-index": 1
     }
   ]
