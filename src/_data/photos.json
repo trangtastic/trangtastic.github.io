@@ -2,23 +2,23 @@
   "items": [
     {
       "photo": "../images/photos/1.jpg",
-      "photographer": "Ingolf Bode"
+      "photographer": "Maryna Paliienko"
     },
     {
       "photo": "../images/photos/2.jpg",
-      "photographer": "Ingolf Bode"
+      "photographer": "Maryna Paliienko"
     },
     {
       "photo": "../images/photos/3.jpg",
-      "photographer": "YellowBelly"
+      "photographer": "Maryna Paliienko"
     },
     {
       "photo": "../images/photos/4.jpg",
-      "photographer": "YellowBelly"
+      "photographer": "Maryna Paliienko"
     },
     {
       "photo": "../images/photos/5.jpg",
-      "photographer": "YellowBelly"
+      "photographer": "Maryna Paliienko"
     },
     {
       "photo": "../images/photos/6.jpg",
@@ -26,10 +26,14 @@
     },
     {
       "photo": "../images/photos/7.jpg",
-      "photographer": "Monika Szolle"
+      "photographer": "Ingolf Bode"
     },
     {
       "photo": "../images/photos/8.jpg",
+      "photographer": "Ingolf Bode"
+    },
+    {
+      "photo": "../images/photos/9.jpg",
       "photographer": "YellowBelly"
     }
   ]
