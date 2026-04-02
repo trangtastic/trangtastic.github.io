@@ -14,7 +14,7 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/wie-es-euch-gefaellt/",
       "image": "wieeseuchgefaellt.jpg",
-      "dates": ["07.03.2026", "25.03.2026"],
+      "dates": [""],
       "item-index": 1
     },
     {
@@ -22,15 +22,7 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/antigone/",
       "image": "",
-      "dates": ["04.02.2026", "26.02.2026", "03.03.2026", "10.04.2026"],
-      "item-index": 1
-    },
-    {
-      "production": "Wünsch Dir Deinen Song > Valentinsspecial 💕",
-      "location": "Staatstheater Wiesbaden",
-      "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/wuensch-dir-deinen-song/",
-      "image": "",
-      "dates": ["14.02.2026"],
+      "dates": ["10.04.2026", "24.04.2026", "09.05.2026"],
       "item-index": 1
     },
     {
@@ -38,7 +30,15 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/leonce-und-lena/",
       "image": "leonce.jpg",
-      "dates": ["05.02.2026","18.02.2026", "22.02.2026", "01.03.2026", "08.03.2026", "11.03.2026", "27.03.2026"],
+      "dates": ["04.04.2026", "19.04.2026", "22.04.2026", "17.05.2026", "29.05.2026"],
+      "item-index": 1
+    },
+    {
+      "production": "Über die Notwendigkeit, dass ein See verschwindet",
+      "location": "Staatstheater Wiesbaden",
+      "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/ueber-die-notwendigkeit-dass-ein-see-verschwindet-4975/",
+      "image": "",
+      "dates": ["17.04.2026", "21.04.2026", "20.05.2026"],
       "item-index": 1
     }
   ]

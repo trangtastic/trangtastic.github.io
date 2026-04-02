@@ -93,6 +93,20 @@
     "title": "Stage",
     "items": [
       {
+        "year": "2026",
+        "production": "Über die Notwendigkeit, dass ein See verschwindet",
+        "direction": "Theresa Thomasberger",
+        "author": "Anna Neata",
+        "venue": "Staatstheater Wiesbaden"
+      },
+      {
+        "year": "2026",
+        "production": "Leonce und Lena",
+        "direction": "Stefan Pucher",
+        "author": "G. Büchner",
+        "venue": "Staatstheater Wiesbaden"
+      },
+      {
         "year": "2025",
         "production": "Antigone",
         "direction": "Mikheil Charkviani",
@@ -178,6 +192,25 @@
         "direction": "Salome Dastmalchi",
         "author": "Patty Kim Hamilton",
         "venue": "Deutsches Theater Berlin"
+      }
+    ]
+  },
+  "audio": {
+    "title": "audio",
+    "items": [
+      {
+        "year": "2026",
+        "production": "Twelve Months of Romance: Nummer Fünf",
+        "author": "Alicia Zett",
+        "direction": "Marlene Breuer",
+        "company": "Hessischer Rundfunk"
+      },
+      {
+        "year": "2026",
+        "production": "Wir dachten, wir könnten fliegen: Fritz",
+        "author": "Caroline Wahl",
+        "direction": "Marlene Breuer",
+        "company": "Hessischer Rundfunk"
       }
     ]
   }

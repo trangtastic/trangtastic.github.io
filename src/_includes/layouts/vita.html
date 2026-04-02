@@ -74,6 +74,24 @@
                 </li>
                 {% endfor %}
             </ul>
+
+            <h2 class="title">{{vita.audio.title}}</h2>
+            <ul class="list">
+                {% for item in vita.audio.items %}
+                <li data-year="{{ item.year }}">
+                    <span class="production">{{ item.production }}</span>
+                    <span class="by">written by</span> <span class="name">{{ item.author }}</span>
+                    <span class="by">directed by</span> <span class="name">{{ item.direction }}</span>
+                    {% if item.casting %}
+                    <span class="by">cast by</span> <span class="name">{{ item.casting }}</span>
+                    {% endif %}
+
+                    <span class="company">{{ item.company }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+
+
         </div>
         {% include "partials/footer.html" %}
     </div>
