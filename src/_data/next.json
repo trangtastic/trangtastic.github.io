@@ -22,7 +22,15 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/antigone/",
       "image": "",
-      "dates": ["10.04.2026", "24.04.2026", "09.05.2026"],
+      "dates": ["10.04.2026", "09.05.2026"],
+      "item-index": 1
+    },
+    {
+      "production": "Antigone bei 'Radikal Jung'",
+      "location": "Volkstheater München",
+      "url": "https://www.muenchner-volkstheater.de/programm/schauspiel/antigone",
+      "image": "",
+      "dates": ["24.04.2026"],
       "item-index": 1
     },
     {
