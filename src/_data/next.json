@@ -2,19 +2,11 @@
   "title": "theater",
   "items": [
     {
-      "production": "Haben Sie 5 Minuten Zeit?",
-      "location": "Staatstheater Wiesbaden",
-      "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/haben-sie-5-minuten-zeit/",
-      "image": "schale1.jpg",
-      "dates": ["07.02.2026"],
-      "item-index": 1
-    },
-    {
       "production": "Wie es euch gefällt",
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/wie-es-euch-gefaellt/",
       "image": "wieeseuchgefaellt.jpg",
-      "dates": ["03.06.2026"],
+      "dates": ["07.11.2026"],
       "item-index": 1
     },
     {
@@ -22,7 +14,7 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/antigone/",
       "image": "",
-      "dates": ["09.05.2026"],
+      "dates": ["12.11.2026"],
       "item-index": 1
     },
     {
@@ -30,15 +22,23 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/leonce-und-lena/",
       "image": "leonce.jpg",
-      "dates": ["17.05.2026", "29.05.2026", "05.06.2026", "12.06.2026", "27.06.2026"],
+      "dates": ["11.10.2026", "24.10.2026", "22.11.2026"],
       "item-index": 1
     },
     {
-      "production": "Über die Notwendigkeit, dass ein See verschwindet",
+      "production": "Am Samstag gehen die Mädchen in den Wald und jagen Sachen in die Luft",
       "location": "Staatstheater Wiesbaden",
-      "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/ueber-die-notwendigkeit-dass-ein-see-verschwindet-4975/",
+      "url": "",
       "image": "",
-      "dates": ["20.05.2026", "06.06.2026", "07.06.2026", "21.06.2026"],
+      "dates": ["18.09.2026", "03.10.2026"],
+      "item-index": 1
+    },
+    {
+      "production": "Bunbury",
+      "location": "Staatstheater Wiesbaden",
+      "url": "",
+      "image": "",
+      "dates": ["30.10.2026", "05.11.2026", "15.11.2026"],
       "item-index": 1
     }
   ]
