@@ -2,19 +2,15 @@
   "title": "theater",
   "items": [
     {
-      "production": "Wie es euch gefällt",
-      "location": "Staatstheater Wiesbaden",
-      "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/wie-es-euch-gefaellt/",
-      "image": "wieeseuchgefaellt.jpg",
-      "dates": ["07.11.2026"],
-      "item-index": 1
-    },
-    {
       "production": "Antigone",
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/antigone/",
       "image": "",
-      "dates": ["12.11.2026"],
+      "dates": [
+        "12.11.2026",
+        "06.12.2026",
+        "14.01.2027"
+      ],
       "item-index": 1
     },
     {
@@ -22,23 +18,37 @@
       "location": "Staatstheater Wiesbaden",
       "url": "https://www.staatstheater-wiesbaden.de/spielplan/a-z/leonce-und-lena/",
       "image": "leonce.jpg",
-      "dates": ["11.10.2026", "24.10.2026", "22.11.2026"],
+      "dates": [
+        "22.11.2026",
+        "30.12.2026",
+        "17.01.2027"
+      ],
       "item-index": 1
     },
     {
       "production": "Am Samstag gehen die Mädchen in den Wald und jagen Sachen in die Luft",
       "location": "Staatstheater Wiesbaden",
-      "url": "",
+      "url": "https://www.staatstheater-wiesbaden.de/spielplan/kalender/maedchen-26-27/2284/",
       "image": "",
-      "dates": ["18.09.2026", "03.10.2026"],
+      "dates": [
+        "01.02.2027"
+      ],
       "item-index": 1
     },
     {
       "production": "Bunbury",
       "location": "Staatstheater Wiesbaden",
-      "url": "",
+      "url": "https://www.staatstheater-wiesbaden.de/spielplan/kalender/2026-04/bunbury-jetzt-mal-im-ernst-26-27/2354/",
       "image": "",
-      "dates": ["30.10.2026", "05.11.2026", "15.11.2026"],
+      "dates": [
+        "05.11.2026",
+        "15.11.2026",
+        "04.12.2026",
+        "26.12.2026",
+        "07.01.2027",
+        "16.01.2027",
+        "30.01.2027"
+      ],
       "item-index": 1
     }
   ]
